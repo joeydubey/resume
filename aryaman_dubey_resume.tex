@@ -60,6 +60,20 @@
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
+\newcommand{\resumeProheading}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \\
+      \textit{\small#2} & \textit{\small #3} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
@@ -75,8 +89,9 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://github.com/joeydubey}{\Large Aryaman Dubey}} & Email : \href{mailto:joeydubey@gmail.com}{joeydubey@gmail.com}\\
+  \textbf{\href{http://github.com/joeydubey}{\LARGE Aryaman Dubey}} & Email : \href{mailto:joeydubey@gmail.com}{joeydubey@gmail.com}\\
   \href{http://github.com/joeydubey}{http://www.github.com/joeydubey} & Mobile : +852-9062-9037 \\
+  & {107a, Simon KY Lee Hall, HKU}
 \end{tabular*}
 
 
@@ -108,7 +123,7 @@
       {University of Hong Kong}{Hong Kong SAR}
       {Student Teaching Assistant}{Jan 2019 - Present}
       \resumeItemListStart
-        \resumeItem{COMP1117-2B: Computer programming}
+        \resumeItem{COMP1117-2B - Computer programming}
           {The course was specifically designed for students majoring in non-Engineering subjects with over 200 students enrolled. I was assigned to mentor a group of 20 students. Involved in problem solving and explanation of core concepts.}
       \resumeItemListEnd
 
@@ -118,10 +133,26 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{tinyshell}
-      {A Unix-like shell program with three basic commands built into it.}
-    \resumeSubItem{Project Euler}
-      {Solutions to some of the Project Euler problems (on-going).}
+
+    \resumeProheading
+      {tinyshell}
+      {A Unix-like shell emulator program.}{Nov 2018 - Dec 2018}
+      \resumeItemListStart
+        \resumeProItem
+          {Two built-in commands and external command support through system calls.}
+        \resumeProItem
+          {Implementation of data structures using Standard Template Library.}
+        \resumeProItem
+          {Creation of child processes using fork().}
+      \resumeItemListEnd
+    \resumeProheading
+      {Project Euler}
+      {Solutions to some of the famous Project Euler \href{https://projecteuler.net}{(projecteuler.net)} mathematical programming problems.}{Ongoing}
+      \resumeItemListStart
+        \resumeProItem
+          {Solved 25 problems.}
+      \resumeItemListEnd
+    
   \resumeSubHeadingListEnd
 
 %
@@ -129,9 +160,9 @@
 \section{Programming Skills}
   \resumeSubHeadingListStart
     \item{
-      \textbf{Languages}{: Python, C++, C, Bash}
+      \textbf{Languages}{: Python, C++, C, Java, Bash}
       \hfill
-      \textbf{Technologies}{: GIMP, After Effects, Audacity}
+      \textbf{Technologies}{: GIMP, After Effects, Audacity, ffmpeg}
     }
   \resumeSubHeadingListEnd
 
